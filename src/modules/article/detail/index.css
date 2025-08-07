@@ -1,0 +1,75 @@
+/* Contoh CSS untuk styling konten artikel */
+.article-detail {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.article-detail h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.article-detail h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.article-detail h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.article-detail p {
+  margin-bottom: 12px;
+}
+
+.article-detail ul {
+  list-style-type: disc !important;
+  list-style-position: inside !important;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.article-detail ol {
+  list-style-type: decimal !important;
+  list-style-position: inside !important;
+  counter-reset: foo;
+  display: table;
+  margin: 0px;
+  padding-left: 15px;
+}
+
+.article-detail ol > li {
+  counter-increment: foo;
+  display: table-row;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 1px;
+  text-indent: 1em;
+}
+
+.article-detail ol > li::before {
+  content: counter(foo) '.';
+  display: table-cell;
+  text-align: right;
+}
+
+.article-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.article-detail a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article-detail a:hover {
+  text-decoration: underline;
+}
